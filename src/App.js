@@ -10,7 +10,7 @@ const App = () => {
   const decrement2 = () => setCount(previousCount => previousCount - 1);
   
   const reset = () => setCount(0);
-  const multiple = () => setCount(previousCount => previousCount * 2);
+  const double = () => setCount(previousCount => previousCount * 2);
   const devide3 = () => setCount(previousCount => {
     if (previousCount % 3 === 0) {
       return previousCount / 3;
@@ -31,7 +31,7 @@ const App = () => {
       </div>
       <div>
         <button onClick={reset}>Reset</button>
-        <button onClick={multiple}>x2</button>
+        <button onClick={double}>x2</button>
         <button onClick={devide3}>3の倍数の時だけ3で割る</button>
       </div>
     </>
